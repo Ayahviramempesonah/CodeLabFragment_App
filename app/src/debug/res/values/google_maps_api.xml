@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=23:06:4E:63:3A:F0:11:82:BB:4A:2B:C1:06:90:2D:9C:CF:E6:F8:4B%3Bviratech.codelabfragmentapp
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    viratech.codelabfragmentapp
+
+    SHA-1 certificate fingerprint:
+    23:06:4E:63:3A:F0:11:82:BB:4A:2B:C1:06:90:2D:9C:CF:E6:F8:4B
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">YOUR_KEY_HERE</string>
+</resources>
