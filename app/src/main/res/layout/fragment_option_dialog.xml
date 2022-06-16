@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+        android:padding="16dp"
+             tools:context=".OptionDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:id="@+id/tv_coach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_coach"/>
+
+
+    <RadioGroup
+
+
+            android:orientation="vertical"
+            android:id="@+id/rd_satu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+
+                android:text="@string/rd_kedua"
+                android:id="@+id/rd_dua"
+                android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+        <RadioButton
+
+                android:text="@string/rd_ketiga"
+                android:id="@+id/rd_tiga"
+                android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+
+        <RadioButton
+
+
+
+                android:text="@string/rd_keempat"
+                android:id="@+id/rd_empat"
+                android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+        <RadioButton
+
+                android:text="@string/rd_kelima"
+                android:id="@+id/rd_lima"
+                android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RadioGroup>
+
+
+    <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <Button
+
+                android:layout_weight="0.5"
+                style="@style/MaterialAlertDialog.Material3.Title.Icon"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="@string/close"
+                android:id="@+id/btn_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+<Button
+
+        android:layout_weight="0.5"
+        style="@style/MaterialAlertDialog.Material3.Title.Icon"
+        android:layout_marginRight="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/choose"
+        android:id="@+id/btn_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

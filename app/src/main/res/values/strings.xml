@@ -4,5 +4,14 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_home_fragment">HELLO HOME FRAGMENT</string>
     <string name="btn_category">BUTTON CATEGORY</string>
-    <string name="category_lifestyle">BUTTON CATEGORY</string>
+    <string name="category_lifestyle">BUTTON LIFESTYLE</string>
+    <string name="to_profile">TO PROFILE</string>
+    <string name="show_dialog">SHOW DIALOG</string>
+    <string name="question_coach">QUESTION COACH</string>
+    <string name="rd_kedua">PEP GUARDIOLA</string>
+    <string name="rd_ketiga">MOURINHO</string>
+    <string name="rd_keempat">XAVI</string>
+    <string name="rd_kelima">SHIN TAE YONG</string>
+    <string name="close">CLOSE</string>
+    <string name="choose">PILIH</string>
 </resources>

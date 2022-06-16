@@ -39,7 +39,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     override fun onClick(p0: View) {
 
 
-        if (p0.id == R.id.btn_ctg_lifestyle) {
+        if (p0.id == R.id.btn_category) {
 
             val mCategoryFragment = CategoryFragment()
             val mFragmentManager = parentFragmentManager

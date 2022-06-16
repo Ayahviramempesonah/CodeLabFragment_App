@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         Log.d("my flexible fragment","fragment name" + HomeFragment::class.java.simpleName)
         mFragment
             .beginTransaction()
+            // frame_layout ada di activity_main.xml
             .add(R.id.frame_layout,mHomeFragment,HomeFragment::class.java.simpleName)
             .commit()
 
