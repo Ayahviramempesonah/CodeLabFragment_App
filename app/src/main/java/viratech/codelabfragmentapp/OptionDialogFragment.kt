@@ -94,11 +94,13 @@ btClose.setOnClickListener{
         super.onAttach(context)
 
         val fragment = parentFragment
+
+
         if (fragment is DetailCategoryFragment){
 
 
             // error disini fragment.optionDialogListener
-          //   this.optionDialogListener = fragment.optionDialogListener
+             //this.optionDialogListener = fragment.optionDialogListener
 
 
         }

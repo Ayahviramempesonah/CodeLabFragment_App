@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 class DetailCategoryFragment : Fragment() {
 
@@ -44,6 +45,19 @@ class DetailCategoryFragment : Fragment() {
         btnProfile = view.findViewById(R.id.btn_dtl_satu)
         btnShow = view.findViewById(R.id.btn_dtl_dua)
 
+        btnShow.setOnClickListener {
+
+            val mOptionDialogFragment = OptionDialogFragment()
+
+            val mFragmentManager = childFragmentManager
+            mOptionDialogFragment.show(mFragmentManager,OptionDialogFragment::class.java.simpleName)
+
+
+        }
+
+
+
+
 
         if ( savedInstanceState != null ){
 
@@ -71,6 +85,20 @@ class DetailCategoryFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_detail_category, container, false)
     }
+
+
+    internal var  optionDialogFragment:OptionDialogFragment.OnOptionDialogListener = object  : OptionDialogFragment.OnOptionDialogListener{
+
+
+        override fun onOptionCHosen(text: String?) {
+            Toast.makeText(requireActivity(),text,Toast.LENGTH_LONG).show()
+        }
+    }
+
+
+
+
+
 
 
 }
