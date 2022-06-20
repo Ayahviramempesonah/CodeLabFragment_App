@@ -23,20 +23,20 @@
 
 
             android:orientation="vertical"
-            android:id="@+id/rd_satu"
+            android:id="@+id/rd_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         <RadioButton
 
                 android:text="@string/rd_kedua"
-                android:id="@+id/rd_dua"
+                android:id="@+id/rb_satu"
                 android:layout_width="match_parent"
-                     android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"/>
         <RadioButton
 
                 android:text="@string/rd_ketiga"
-                android:id="@+id/rd_tiga"
+                android:id="@+id/rb_dua"
                 android:layout_width="match_parent"
                      android:layout_height="wrap_content"/>
 
@@ -46,13 +46,13 @@
 
 
                 android:text="@string/rd_keempat"
-                android:id="@+id/rd_empat"
+                android:id="@+id/rb_tiga"
                 android:layout_width="match_parent"
                      android:layout_height="wrap_content"/>
         <RadioButton
 
                 android:text="@string/rd_kelima"
-                android:id="@+id/rd_lima"
+                android:id="@+id/rb_empat"
                 android:layout_width="match_parent"
                      android:layout_height="wrap_content"/>
 
