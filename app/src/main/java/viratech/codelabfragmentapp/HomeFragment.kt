@@ -13,11 +13,6 @@ import android.widget.Button
 class HomeFragment : Fragment(), View.OnClickListener {
     // TODO: Rename and change types of parameters
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
