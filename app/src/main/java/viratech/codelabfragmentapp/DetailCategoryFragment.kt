@@ -1,5 +1,6 @@
 package viratech.codelabfragmentapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -52,6 +53,12 @@ class DetailCategoryFragment : Fragment() {
         }
 
 
+        btnProfile.setOnClickListener {
+            val mIntent= Intent(requireActivity(),ProfileActivity::class.java)
+            startActivity(mIntent)
+        }
+
+
 
 
 
@@ -86,7 +93,7 @@ class DetailCategoryFragment : Fragment() {
         object : OptionDialogFragment.OnOptionDialogListener {
 
 
-            override fun onOptionCHosen(text: String?) {
+            override fun onOptionCHosen(text: String? ) {
                 //val text ="bhddbdjj"
                 Toast.makeText(requireActivity(), text, Toast.LENGTH_SHORT).show()
             }

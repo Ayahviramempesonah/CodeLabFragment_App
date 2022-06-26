@@ -14,4 +14,5 @@
     <string name="rd_kelima">SHIN TAE YONG</string>
     <string name="close">CLOSE</string>
     <string name="choose">PILIH</string>
+    <string name="app_k">HALLO SAYA TEXTVIEW DARI ACTIVITY</string>
 </resources>
