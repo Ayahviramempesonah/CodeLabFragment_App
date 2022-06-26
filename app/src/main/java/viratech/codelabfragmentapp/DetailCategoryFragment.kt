@@ -87,6 +87,7 @@ class DetailCategoryFragment : Fragment() {
 
 
             override fun onOptionCHosen(text: String?) {
+                //val text ="bhddbdjj"
                 Toast.makeText(requireActivity(), text, Toast.LENGTH_SHORT).show()
             }
         }

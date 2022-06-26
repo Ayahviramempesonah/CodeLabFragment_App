@@ -23,6 +23,13 @@ class OptionDialogFragment : DialogFragment() {
     private var optionDialogListener: OnOptionDialogListener? = null
 
 
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_option_dialog, container, false)
+    }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -41,15 +48,15 @@ class OptionDialogFragment : DialogFragment() {
 
             if (checkedRadioButtonId != -1) {
 
-                val coach: String? = when (checkedRadioButtonId) {
+                var coach: String?  = when (checkedRadioButtonId) {
 
-                    R.id.rb_satu -> rbSatu.text.toString().trim()
+                    R.id.rb_satu ->   rbSatu .text .toString().trim() + "anda memlih"
 
-                    R.id.rb_dua -> rbDua.text.toString().trim()
+                    R.id.rb_dua -> rbDua.text.toString().trim() + "anda memlih"
 
-                    R.id.rb_tiga -> rbTiga.text.toString().trim()
+                    R.id.rb_tiga -> rbTiga.text.toString().trim() + "anda memlih"
 
-                    R.id.rb_empat -> rbEmpat.text.toString().trim()
+                    R.id.rb_empat -> rbEmpat.text.toString().trim() + "anda memlih"
 
                     else -> null
                 }
@@ -67,18 +74,17 @@ class OptionDialogFragment : DialogFragment() {
         }
     }
 
-    override fun onCreateView(
+  /*  override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_option_dialog, container, false)
-    }
+    }*/
 
     interface OnOptionDialogListener {
-
-
         fun onOptionCHosen(text: String?)
+       // val h ="anda memlih"
     }
 
     override fun onAttach(context: Context) {
@@ -91,7 +97,8 @@ class OptionDialogFragment : DialogFragment() {
 
 
             // error disini fragment.optionDialogListener
-            this.optionDialogListener = fragment.optionDialogListener
+            //ternyata fix nya pakai optionDialogFragment yang diambil dari ctrl+q
+            this.optionDialogListener = fragment.optionDialogFragment
 
 
         }
